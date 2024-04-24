@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/appointment-form.css">
+    <script type="module" src="/js/appointment-form.js"></script>
+  
+
+</head>
+
+<body>
+    <div class="formbold-main-wrapper">
+
+        <div class="formbold-form-wrapper">
+            <form id="appointment-form">
+                <div class="formbold-mb-5">
+                    <label for="name" class="formbold-form-label"> Full Name </label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" class="formbold-form-input" />
+                    <br>
+                    <span id="nameError" class="error"></span><br>
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="phone" class="formbold-form-label"> Phone Number </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                        class="formbold-form-input" /><br>
+                    <span id="phoneError" class="error"></span><br>
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="email" class="formbold-form-label"> Email Address </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"
+                        class="formbold-form-input" /><br>
+                    <span id="emailError" class="error"></span><br>
+                </div>
+                <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="date" class="formbold-form-label"> Date </label>
+                            <input type="date" name="date" id="date" class="formbold-form-input" /><br>
+                            <span id="dateError" class="error"></span><br>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5">
+                            <label for="time" class="formbold-form-label"> Time </label>
+                            <input type="time" name="time" id="time" class="formbold-form-input" /><br>
+                            <span id="timeError" class="error"></span><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="formbold-btn" type="submit" id="appointment-submit">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+
+</html>
